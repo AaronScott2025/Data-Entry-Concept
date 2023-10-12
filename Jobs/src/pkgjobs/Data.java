@@ -1,5 +1,9 @@
 package pkgjobs;
 
+
+/**
+ * Data Class takes all of the data, and puts it into one instance for easier implementation to the txt files.
+ */
 public class Data {
 	
 	private String name;
@@ -7,8 +11,9 @@ public class Data {
 	private String pos;
 	private String salary;
 	private String gender;
-	
-	
+         /**
+	 * Default Constructor
+	 */
 	public Data() {
 		name = "";
 		dept = "";
@@ -18,7 +23,9 @@ public class Data {
 		
 	}
 	
-	
+	/**
+	 * Parameter Constructor
+	 */
 	public Data(String name, String dept, String pos, String salary, String gender) {
 		this.name = name;
 		this.dept = dept;
@@ -27,7 +34,9 @@ public class Data {
 		this.gender = gender;
 	}
 
-
+	/**
+	 * Get and Set methods for each variable(set goes unused in code, used it originally for testing purposes)
+	 */
 	public String getName() {
 		return name;
 	}
@@ -77,8 +86,5 @@ public class Data {
 		this.gender = gender;
 	}
 	
-	public void datFile() {
-		
-	}
 	
 }
