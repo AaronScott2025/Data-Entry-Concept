@@ -54,7 +54,7 @@ public class Ids {
 		BufferedReader search = new BufferedReader(new FileReader("idNumbers.txt"));
 			while ((line = search.readLine()) != null) {
 				if(id == line) {
-					idNumGen();	
+					return idNumGen();	
 				}
 			}
 			BufferedWriter attach = new BufferedWriter(new FileWriter("idNumbers.txt", true));
